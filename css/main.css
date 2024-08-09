@@ -47,7 +47,6 @@ body {
      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
 }
 
-
 .hero-section img, .about-section img.profile-img, .aboutp-section img.profile-img {
     transition: opacity 0.3s;
 }
@@ -60,7 +59,7 @@ body {
     border-radius: 25px;
 }
 
-.btn.btn-hire, .btn.btn-know-more, .btn.btn-read-more, .btn.btn-submit , .btn.btn-appointment, .btn.btn-cv-tour    {
+.btn.btn-hire, .btn.btn-know-more, .btn.btn-read-more, .btn.btn-submit , .btn.btn-appointment, .btn.btn-cv-tour {
     background-color: var(--accent-color);
 }
 
