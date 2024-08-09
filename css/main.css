@@ -1,0 +1,145 @@
+/* CSS Variables */
+:root {
+    --primary-color: #037FFE;
+    --secondary-color: #004183;
+    --accent-color: #6DC8C2;
+    --text-color-light: white;
+    --text-color-dark: #000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-light);
+    display: grid;
+    flex-direction: column;
+}
+
+.navbar, .hero-section, .aboutp-section, .card, .contact-section, .additional-section {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link,.card i, .card-title , .card-text, footer  {
+    color: var(--text-color-light);
+}
+.btn.btn-know-more:hover, .btn.btn-hire:hover, .btn.btn-talk:hover, .social-icons a:hover,.social-icons-footer a:hover, .btn.btn-read-more:hover, .btn.btn-submit:hover, .btn.btn-appointment:hover, .btn.btn-cv-tour:hover {
+    background-color: var(--text-color-light);
+}
+.btn.btn-know-more:hover, .btn.btn-hire , .btn.btn-appointment, .btn.btn-cv-tour, .btn.btn-submit, .btn.btn-read-more, .btn.btn-hire:hover, .btn.btn-talk:hover, .social-icons a:hover,.social-icons-footer a:hover, .btn.btn-read-more:hover, .btn.btn-submit:hover, .btn.btn-appointment:hover, .btn.btn-cv-tour:hover {
+    color: var(--text-color-dark);
+}
+
+.navbar-nav .nav-link:hover, .btn.btn-talk, .social-icons a, .social-icons-footer a, .subtitle, .new, .navbar-brand:hover {
+    color: var(--accent-color);
+}
+.card-body, .btn, .img-fluids {
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-body:hover, .btn:hover, .img-fluids:hover {
+     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero-section img, .about-section img.profile-img, .aboutp-section img.profile-img {
+    transition: opacity 0.3s;
+}
+
+.hero-section img:hover, .about-section img.profile-img:hover, .aboutp-section img.profile-img:hover {
+    opacity: 0.4;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+.btn.btn-hire, .btn.btn-know-more, .btn.btn-read-more, .btn.btn-submit , .btn.btn-appointment, .btn.btn-cv-tour    {
+    background-color: var(--accent-color);
+}
+
+.btn.btn-talk {
+    border: 2px solid var(--accent-color);
+}
+
+.social-icons a, .social-icons-footer a {
+    border: 2px solid var(--accent-color);
+    border-radius: 50%; 
+    display: inline-flex;
+    width: 40px; 
+    height: 40px; 
+    font-size: 20px; 
+    margin-top: 40px;
+}
+
+.about-section, .mission-value-section, footer, .navbar-toggler-icon   {
+    background-color: var(--secondary-color); 
+}
+.services-section h1 {
+    color: var(--secondary-color);
+}
+
+.about-section img.profile-img {
+    max-width: 300px; 
+}
+
+.img-fluid {
+    width: 150px;
+    height: auto;
+}
+.aboutp-section img.profile-img {
+    max-width: 300px;
+}
+
+.card { 
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card i {
+    font-size: 40px; 
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.card-text {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-section {
+    flex: 1; 
+}
+
+.additional-section img.additional-img {
+    max-width: 300px; 
+    border-radius: 50%; 
+}
+@media (max-width: 768px) {
+    .navbar {
+        background-color: var(--secondary-color);
+    }
+    .card-deck {
+        flex-direction: column;
+    }
+    .hero-section img {
+        visibility: hidden;
+    }
+}
+@media (min-width: 769px) {
+    .navbar {
+        background-color: var(--secondary-color);
+    }
+}
